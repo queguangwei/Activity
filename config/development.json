@@ -1,0 +1,23 @@
+{
+  "env": "development",
+  "port": 3000,
+  "api": {
+    "lo": [
+      {
+        "root": "/api",
+        "proxy":{
+          "/activity": "http://192.168.25.1:8080/"
+        }
+
+      }
+    ],
+    "dev":[
+      {
+        "root": "/api",
+        "proxy":{
+          "/activity": "http://192.168.25.1:8088"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,13 @@
+/**
+ * 开关
+ *
+ * @url /activity/v1/lucky/switch
+ * 返回说明
+ * code: 0 成功，3001未登录状态
+ * isOn: 1开启  0 关闭
+ */
+{
+  "code":0,
+  "data":1,
+  "msg":""
+}

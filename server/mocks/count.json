@@ -1,0 +1,14 @@
+/**
+ * 剩余抽奖次数
+ *
+ * @url /activity/v1/lucky/getLotteryTimes
+ * 返回说明
+ * code: 0 成功，3001未登录状态
+ */
+{
+  "code":0,
+  "data":{
+    "count": 10
+  },
+  "msg":""
+}

@@ -1,0 +1,41 @@
+/**
+ * 中奖人员名单
+ *
+ * @url /activity/v1/lucky/winnerList
+ * 返回说明
+ * code: 0 成功，3001未登录状态
+ */
+{
+  "code":0,
+  "data":[
+      {
+        "headImage":"@image(40x40)",
+        "userName":"130********",
+        "createTime":"2017-10-26 09:30:00",
+        "prize":"88",
+        "type":1
+      },
+      {
+        "headImage":"@image(40x40)",
+        "userName":"131********",
+        "createTime":"2017-10-26 09:30:00",
+        "prize":"剃须刀",
+        "type":5
+      },
+      {
+        "headImage":"@image(40x40)",
+        "userName":"135********",
+        "createTime":"2017-10-26 09:30:00",
+        "prize":"88",
+        "type":1
+      },
+      {
+        "headImage":"@image(40x40)",
+        "userName":"133********",
+        "createTime":"2017-10-26 09:30:00",
+        "prize":"剃须刀",
+        "type":5
+      }
+    ],
+  "msg":"请求成功"
+}

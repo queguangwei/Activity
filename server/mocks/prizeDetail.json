@@ -1,0 +1,17 @@
+/**
+ * 抽奖信息反馈
+ *
+ * @url /activity/v1/lucky/lotteryDraw
+ * 返回说明
+ * code: 0 成功，3001未登录状态
+ * type: 5:实物 ,4：188红包,3:88红包,2:38红包,1:18元红包 ，0祝福语
+ * prize: 中奖信息
+ */
+{
+  "code":0,
+  "data":{
+    "type":0,
+    "prize": "HAPPY NEWYEAR"
+  },
+  "msg":""
+}

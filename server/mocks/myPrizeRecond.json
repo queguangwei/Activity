@@ -1,0 +1,27 @@
+/**
+ * 我的中奖纪录
+ *
+ * @url /activity/v1/lucky/getUserPrize
+ * 返回说明
+ * code: 0 成功，3001未登录状态
+ */
+
+{
+  "code":0,
+  "data":{
+    "currentPage":1,
+    "items|6":[
+      {
+        "createTime":"2017-10-26 09:30:00",
+        "type":5,
+        "prize":"博朗剃须刀"
+      }
+    ],
+    "nextPage":2,
+    "pageSize":6,
+    "prevPage":1,
+    "totalCount":13,
+    "totalPageCount":15
+  },
+  "msg":"请求成功"
+}
