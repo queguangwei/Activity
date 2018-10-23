@@ -159,7 +159,7 @@ class Egg extends Component {
             state.rolling = false
             state.visible = true
             this.setState(state)
-        },2500)
+        },2000)
     }
 
     closeShow() {
