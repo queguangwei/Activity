@@ -801,15 +801,20 @@ button{
       height: 15vw;
       margin: 0 auto;
       p{
+        position: relative;
+        text-indent: px2rem(18px);
         margin-bottom: px2rem(18px);
         &:before{
           content: '';
           display: inline-block;
           background-color: #D3831C;
           border-radius: 50%;
-          width: px2rem(9px);
-          height: px2rem(9px);
-          margin-right: px2rem(18px);
+          width: px2rem(7px);
+          height: px2rem(7px);
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          left: 0;
         }
       }
     }
