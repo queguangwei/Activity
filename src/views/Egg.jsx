@@ -14,7 +14,7 @@ class EggRule extends React.Component {
 
     render() {
         return (
-            <div className="lottery">
+            <div className="eggLottery">
                 <Icon type="close-circle" theme="outlined" className="closeCircle" style={{fontSize:30,color:'#fff'}} onClick={this.handleClose.bind(this)}/>
                 <article className="rule">
                     <h3>活动规则</h3>
@@ -189,6 +189,7 @@ class Egg extends Component {
             <DocumentTitle title="幸运蛋">
                 <div className="egg">
                     <div className="egg__title">
+                        <button onClick={this.rule.bind(this)}>活动规则></button>
                         <h5>抽吉利蛋,最高抽8888元策略抵用金</h5>
                         <div className="egg__title__p">吉利蛋今日抽取进度</div>
                         <Progress percent={30} showInfo={false} strokeColor="#D36D11"/>
@@ -220,7 +221,7 @@ class Egg extends Component {
                         </div>
                     </Popover>
                     <div className="egg__record">
-                        <p onClick={this.rule.bind(this)}>中奖记录</p>
+                        <p>中奖记录</p>
                         <div className="egg__record__box">
                             <div className="egg__record__box__ul">
                                 <TweenOneGroup
