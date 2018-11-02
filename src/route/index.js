@@ -36,6 +36,14 @@ export const routes = {
                     cb(null, require('../views/Lottery'));
                 }, 'lottery')
             }
+        },
+        {
+            path: 'killmonster',
+            getComponent(nextState, cb) {
+                require.ensure([], require => {
+                    cb(null, require('../views/KillMonster'));
+                }, 'killmonster')
+            }
         }
     ]
 }

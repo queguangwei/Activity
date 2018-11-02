@@ -19,7 +19,7 @@ class Home extends Component {
             <div className="home">
                 <Navigator />
                 <div className="home_content">
-                    <Row gutter={16}>
+                    <Row gutter={16} className="mb-30">
                         <Col className="gutter-row" span={8}>
                             <div className="gutter-box">
                                 <Link to="/act/egg"><Button>跳蛋(h5)</Button></Link>
@@ -33,6 +33,23 @@ class Home extends Component {
                         <Col className="gutter-row" span={8}>
                             <div className="gutter-box">
                                 <Link to="/act/lottery"><Button>转盘(web)</Button></Link>
+                            </div>
+                        </Col>
+                    </Row>
+                    <Row gutter={16} className="mb-30">
+                        <Col className="gutter-row" span={8}>
+                            <div className="gutter-box">
+                                <Link to="/act/killmonster"><Button>怪物猎人</Button></Link>
+                            </div>
+                        </Col>
+                        <Col className="gutter-row" span={8}>
+                            <div className="gutter-box">
+
+                            </div>
+                        </Col>
+                        <Col className="gutter-row" span={8}>
+                            <div className="gutter-box">
+
                             </div>
                         </Col>
                     </Row>
