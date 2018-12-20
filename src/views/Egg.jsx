@@ -47,9 +47,11 @@ class EggMark extends React.Component {
     }
 
     render() {
+		const open = this.props.open
         return (
             <div className="eggLottery">
-                <div className="upper scaleUp">
+                <div className="lower animation" style={open?{display:'none'}:{}}></div>
+                <div className="upper open" style={open?{}:{display:'none'}}>
                     {this.props.thx?
                         <div className="eggLottery__thx">
                             <p className="eggLottery__thx__title">手慢一步, 没抢到哦～</p>
@@ -83,6 +85,7 @@ class Egg extends Component {
             ruleVisible: false,
             rolling: false,
             visible: false,
+			open: false,
             runout: false,
             count: 5,
             winners: [],
@@ -158,7 +161,11 @@ class Egg extends Component {
             }
             state.rolling = false
             state.visible = true
+			state.open = false
             this.setState(state)
+			setTimeout(() => {
+				this.setState({open: true})
+			}, 1400)
         },2000)
     }
 
@@ -242,7 +249,7 @@ class Egg extends Component {
 
                         </div>
                     </div>
-                    {visible?<EggMark gotit={this.closeShow.bind(this)} thx={this.state.thx}/>:null}
+                    {visible?<EggMark gotit={this.closeShow.bind(this)} thx={this.state.thx} open={this.state.open}/>:null}
                     {ruleVisible?<EggRule close={this.closeRule.bind(this)}/>:null}
                 </div>
             </DocumentTitle>
