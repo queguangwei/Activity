@@ -22,6 +22,14 @@ export const routes = {
             }
         },
         {
+			path: 'christmas',
+			getComponent(nextState, callback) {
+				require.ensure([], require => {
+					callback(null, require('../views/Christmas'));
+				}, 'christmas');
+			}
+        },
+        {
             path: 'mlottery',
             getComponent(nextState, cb) {
                 require.ensure([], require => {

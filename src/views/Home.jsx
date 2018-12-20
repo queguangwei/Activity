@@ -39,12 +39,12 @@ class Home extends Component {
                     <Row gutter={16} className="mb-30">
                         <Col className="gutter-row" span={8}>
                             <div className="gutter-box">
-                                <Link to="/act/killmonster"><Button>怪物猎人</Button></Link>
+                                <Link to="/act/christmas"><Button>圣诞树</Button></Link>
                             </div>
                         </Col>
                         <Col className="gutter-row" span={8}>
                             <div className="gutter-box">
-
+                                <Link to="/act/killmonster"><Button>怪物猎人</Button></Link>
                             </div>
                         </Col>
                         <Col className="gutter-row" span={8}>

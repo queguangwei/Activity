@@ -93,8 +93,6 @@ class Egg extends Component {
                 top: 0,
                 reTop: 6,
             },
-            initLate: 0,
-            animate:false,
             thx: false
         }
     }
