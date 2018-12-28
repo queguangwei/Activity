@@ -12,7 +12,7 @@ var bgImage = new Image();
 bgImage.onload = function (){
 	bgReady = true;
 };
-bgImage.src = "images/background.png";
+bgImage.src = "../assets/images/game/background.png";
 var heroReady = false;
 var heroImage = new Image();
 heroImage.onload = function (){
@@ -80,7 +80,8 @@ var update = function (modifier){
 
 
 var render = function (){
-	if(bgReady) {
+	if(!bgReady) {
+		console.log(bgImage)
 		ctx.drawImage(bgImage, 0, 0);
 	}
 	if(heroReady) {
@@ -102,12 +103,10 @@ var main = function () {
 	update(delta / 1000);
 	render();
 	then = now;
-
 	requestAnimationFrame(main);
 };
 
-var w = window;
-requestAnimationFrame = w.requestAnimationFrame || w.webkitRequestAnimationFrame || w.msRequestAnimationFrame || w.mozRequestAnimationFrame;
+
 var then = Date.now();
 reset();
 main();
@@ -117,24 +116,15 @@ class KillMonster extends Component {
 		super(props)
 		this.timer = null,
 			this.state = {
-				ruleVisible: false,
-				rolling: false,
-				visible: false,
-				runout: false,
-				count: 5,
-				winners: [],
-				scroll: {
-					top: 0,
-					reTop: 6,
-				},
-				initLate: 0,
-				animate:false,
-				thx: false
+
 			}
 	}
 
 	componentDidMount() {
-
+		var w = window;
+		requestAnimationFrame = w.requestAnimationFrame || w.webkitRequestAnimationFrame || w.msRequestAnimationFrame || w.mozRequestAnimationFrame;
+		let then = Date.now()
+		main()
 	}
 
 
