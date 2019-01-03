@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 import { Link } from 'react-router'
-import { Row, Col, Button } from 'antd'
+import { Row, Col, Button, Popover } from 'antd'
 import { Navigator } from '../components/common'
 class Home extends Component {
     constructor(props) {
@@ -49,9 +49,19 @@ class Home extends Component {
                         </Col>
                         <Col className="gutter-row" span={8}>
                             <div className="gutter-box">
-
+                                <Link to="/act/demo"><Button>demo</Button></Link>
                             </div>
                         </Col>
+                    </Row>
+                    <Row gutter={16} className="mb-30">
+                        <Col className="gutter-row" span={8}>
+                            <div className="gutter-box">
+                                <Popover content="MDN基础动画例子" title="Title" trigger="hover">
+                                    <Link to="/act/sun"><Button>太阳系</Button></Link>
+                                </Popover>
+                            </div>
+                        </Col>
+
                     </Row>
                 </div>
             </div>

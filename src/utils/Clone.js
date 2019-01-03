@@ -14,7 +14,7 @@ export function clone(target) {
 	} else if (targetType === 'Array') {
 		result = []
 	} else {
-		result target
+		return target
 	}
 	//	遍历目标数据
 	for (let i in target) {
