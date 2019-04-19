@@ -3,7 +3,7 @@ import Cookie from './Cookie'
 
 function getDomain() {
     var host = location.host
-    return host.substr(host.indexOf('ddy98'))
+    return host.substr(host.indexOf('by9'))
 }
 
 function getParams() {
